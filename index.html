@@ -18,10 +18,10 @@
             <small>please fill the form</small>
         </div>
         <form class="form" onsubmit="formHandler() ; return false">
-            <input type="text" class="form-control my-4" placeholder="enter your name ">
+            <input type="text"   class="form-control my-4" placeholder="enter your name ">
             <input type="text" class="form-control my-4" placeholder="enter your father Name ">
             <input type="number" class="form-control my-4" placeholder="enter your Phone number ">
-            <input type="email" class="form-control my-4" placeholder="enter your Email ">
+            <input type="email" class="form-control my-4"  placeholder="enter your Email " >
             <input type="text" class="form-control my-4" placeholder="enter your institute name  ">
             
             <div>
@@ -35,51 +35,69 @@
         <button id="start" class="btn btn-success" onclick="quizStart()">QUIZ START</button>
     </div>
 
-
     <section class="quizWrapper">
         <div class="quizHeader">
-            <div>
-                <p>zeeshan Akbar</p>
-                <p>akbarZeeshan121@.com</p>
-            </div>
-            <div>
-                <h5>Best Of Luck</h5>
-            </div>
-            <div>
-                <p>timer</p>
-                <span>00:00</span>
-            </div>
+        <div>
+            <p id="name">zeeshan</p>
+            <p id="mail">zeeshan@gmai.com</p>
         </div>
+        <div>
+            <h5 class="h5">Best Of Luck</h5>
+        </div>
+        <div>
+            <p>Timer</p>
+            <span>00:00</span>
+        </div>
+    </div>
+    <div class="Quizbody">
+
+        <h5 id="quizQues">
+            Q: Lorem ipsum dolor sit amet.
+        </h5>
+        <div>
+            <ul id="quizOption">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+
+            </ul>
+        </div>
+
+    </div>
+    <div class="quizfooter">
+        <div>
+            <p>1/7</p>
+        </div>
+        <div>
+            <button class="btn btn-primary" id="nextBtn" onclick="nextQues()">NEXT QUES</button>
+        </div>
+    </div>
+
+
+</section>
+    </section>
+
+    <section class="resultWrapper">
+        <h1>RESULT:</h1>
+        <div class="percent"><h1>percentage</h1>
+            <h1 class="hun">100%</h1>
+            <h1 class="com">Completed</h1>
+        </div>
+        <h1>TOTAL QUES: <span id="totalQuesElement"></span> </h1>
+        <h1>Correct ANS: <span id="correctAnsElement"></span></h1>
+        <h1>Wrong ANS: <span id="wrongAnsElement"></span></h1>
+        <h1>Total Score: <span id="totalScoreElement"></span></h1>
+        <!-- <h1>OBTAINED SCORE : <span class="obntaiedScore"></span></h1> -->
     </section>
 
 
-<div class="quizBody">
-    <div>
-        Q: Lorem ipsum dolor sit amet consectetur, adipisicing eli ?
-    </div>
-    <div>
-        <ul>
-            <li>  corrupti libero exercitationem. </li>
-            <li>Tempora, cumque? Aut, eveniet  </li>
-            <li>mollitia architecto adipisci recusandae ,</li>
-            <li>non quos consectetur incidunt laborum,</li>
-        </ul>
-    </div>
-</div>
-
-<div class="quizFooter">
-    <div>
-        <p>1/7</p>
-    </div>
-    <div>
-        <button class="btn btn-primary">NEXT QUES</button>
-    </div>
-</div>
 
 
 
 
 
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
